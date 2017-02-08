@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+  <script src="https://cdn.rawgit.com/AltspaceVR/aframe-altspace-component/v1.3.2/dist/aframe-altspace-component.min.js"></script>
+</head>
+
+<body>
+  <a-scene altspace=fullspace:true>
+
+  <a-entity id="boom" n-sound="on: do-boom; src:theater-space/O_Canada_-_Canada.ogg;"></a-entity>
+<a-box wire="on: click; emit: do-boom; targets: #boom"color="red"></a-box>
+
